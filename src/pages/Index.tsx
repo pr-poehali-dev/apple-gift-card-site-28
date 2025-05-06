@@ -57,7 +57,7 @@ const Index = () => {
               <img 
                 src="https://cdn.poehali.dev/files/11e1e25d-486d-440f-812c-27103476ff7c.png" 
                 alt="Apple Think Different" 
-                className="w-auto h-auto max-h-full"
+                className="w-full object-cover"
               />
             </div>
           </div>
