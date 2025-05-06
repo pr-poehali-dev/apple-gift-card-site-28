@@ -53,10 +53,11 @@ const Index = () => {
             </div>
           </div>
           <div className="mt-16">
-            <div className="flex items-center justify-center h-80 bg-gray-50 rounded-xl shadow-xl overflow-hidden">
-              <Icon 
-                name="Apple" 
-                className="text-black h-40 w-40" 
+            <div className="flex items-center justify-center h-80 bg-gray-900 rounded-xl shadow-xl overflow-hidden">
+              <img 
+                src="https://cdn.poehali.dev/files/11e1e25d-486d-440f-812c-27103476ff7c.png" 
+                alt="Apple Think Different" 
+                className="w-auto h-auto max-h-full"
               />
             </div>
           </div>
