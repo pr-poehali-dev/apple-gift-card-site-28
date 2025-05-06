@@ -1,4 +1,3 @@
-
 import React from "react";
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
@@ -12,7 +11,7 @@ const Index = () => {
       <Navigation />
       
       {/* Hero секция в стиле Apple - iPhone 16 */}
-      <section className="pt-8 pb-16 bg-[#f5f5f7]">
+      <section className="pt-12 pb-16 bg-[#f5f5f7]">
         <div className="max-w-5xl mx-auto px-4 sm:px-6 text-center">
           <h1 className="text-5xl apple-heading font-semibold text-gray-900 tracking-tight">
             iPhone
@@ -34,14 +33,6 @@ const Index = () => {
             <span className="text-sm text-[#0066CC] apple-light">
               Built for Apple Intelligence.
             </span>
-          </div>
-          
-          <div className="mt-6">
-            <img 
-              src="https://cdn.poehali.dev/files/8e61864d-b576-4443-8cee-2a6757619622.png" 
-              alt="iPhone 16 family" 
-              className="w-full h-auto mx-auto"
-            />
           </div>
         </div>
       </section>
