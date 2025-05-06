@@ -38,7 +38,7 @@ const Products = () => {
             <div className="flex-shrink-0">
               <Link to="/" className="flex items-center">
                 <Icon name="Apple" className="text-black h-8 w-8" />
-                <span className="ml-2 text-xl font-medium text-gray-900">Gift Card</span>
+                <span className="ml-2 text-xl apple-style text-gray-900">Gift Card</span>
               </Link>
             </div>
             <div className="hidden md:flex items-center space-x-8">
@@ -65,10 +65,10 @@ const Products = () => {
       <section className="py-12 sm:py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
-            <h1 className="text-3xl font-semibold tracking-tight text-gray-900 sm:text-4xl">
+            <h1 className="text-3xl apple-heading tracking-tight text-gray-900 sm:text-4xl">
               Apple Gift Cards
             </h1>
-            <p className="mt-4 max-w-2xl mx-auto text-lg text-gray-500">
+            <p className="mt-4 max-w-2xl mx-auto text-lg apple-light text-gray-500">
               Выберите карту нужного номинала для себя или в подарок
             </p>
           </div>
@@ -90,12 +90,12 @@ const Products = () => {
                   </div>
                 </CardHeader>
                 <CardContent className="p-6">
-                  <CardTitle className="text-xl font-medium">{card.title}</CardTitle>
-                  <p className="text-2xl font-semibold mt-2">{card.value.toLocaleString()} ₽</p>
-                  <p className="mt-2 text-gray-600">{card.description}</p>
+                  <CardTitle className="text-xl apple-style">{card.title}</CardTitle>
+                  <p className="text-2xl apple-style mt-2">{card.value.toLocaleString()} ₽</p>
+                  <p className="mt-2 text-gray-600 apple-light">{card.description}</p>
                 </CardContent>
                 <CardFooter className="px-6 pb-6 pt-0">
-                  <Button className="w-full rounded-full bg-black hover:bg-gray-800">
+                  <Button className="w-full apple-button rounded-full bg-[#0066CC] hover:bg-blue-600 text-white">
                     Добавить в корзину
                   </Button>
                 </CardFooter>

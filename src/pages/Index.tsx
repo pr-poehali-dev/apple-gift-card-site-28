@@ -1,4 +1,3 @@
-
 import React from "react";
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
@@ -43,7 +42,7 @@ const Index = () => {
           <h1 className="text-5xl apple-heading tracking-tight text-gray-900 mb-2">
             Gift Card
           </h1>
-          <h2 className="text-3xl apple-heading text-gray-900 mb-6">
+          <h2 className="text-2xl apple-subheading text-gray-900 mb-8">
             One card. Everything they love.
           </h2>
           <p className="mt-4 mx-auto text-base apple-light text-gray-600 max-w-2xl leading-relaxed">
@@ -51,31 +50,26 @@ const Index = () => {
           </p>
           
           <div className="flex justify-center space-x-4 mt-8">
-            <Button asChild className="rounded-full px-8 py-2 bg-[#0071e3] text-white hover:bg-blue-600">
+            <Button asChild className="apple-button rounded-full px-8 py-2 bg-[#0066CC] text-white hover:bg-blue-600">
               <Link to="/products">Купить карту</Link>
             </Button>
-            <Button asChild variant="outline" className="rounded-full px-8 py-2 border-gray-300">
+            <Button asChild variant="outline" className="apple-button rounded-full px-8 py-2 border-gray-300">
               <Link to="/instruction">Инструкция</Link>
             </Button>
           </div>
         </div>
         
-        <div className="max-w-5xl mx-auto mt-12 flex justify-center">
-          <div className="bg-white rounded-2xl shadow-lg p-6 w-full max-w-lg">
-            <div className="flex justify-center mb-2">
-              <img 
-                src="https://cdn.poehali.dev/files/328c70d7-dade-4f72-9826-e2eeece3af0b.png" 
-                alt="Apple Gift Card с разноцветным логотипом" 
-                className="w-24 h-auto"
-              />
-            </div>
-            <div className="text-center">
-              <p className="text-sm text-gray-500 apple-light">
-                Подарочная карта для App Store и iTunes
-              </p>
-              <p className="text-3xl font-medium mt-2 apple-style">
-                1 000 ₽
-              </p>
+        <div className="max-w-6xl mx-auto mt-12 px-4">
+          <div className="relative">
+            <img 
+              src="https://cdn.poehali.dev/files/8e61864d-b576-4443-8cee-2a6757619622.png" 
+              alt="Apple iPhone 16 lineup" 
+              className="w-full h-auto rounded-xl"
+            />
+            <div className="absolute bottom-6 left-0 right-0 flex justify-center">
+              <span className="text-sm text-blue-500 apple-light">
+                Built for Apple Intelligence.
+              </span>
             </div>
           </div>
         </div>
@@ -140,7 +134,7 @@ const Index = () => {
               </div>
               <h3 className="text-2xl apple-style text-gray-900 text-center">1 000 ₽</h3>
               <div className="mt-6 text-center">
-                <Button asChild className="rounded-full px-6 py-2 bg-black text-white hover:bg-gray-800">
+                <Button asChild className="apple-button rounded-full px-6 py-2 bg-[#0066CC] text-white hover:bg-blue-600">
                   <Link to="/products">Выбрать</Link>
                 </Button>
               </div>
@@ -153,7 +147,7 @@ const Index = () => {
               </div>
               <h3 className="text-2xl apple-style text-gray-900 text-center">2 500 ₽</h3>
               <div className="mt-6 text-center">
-                <Button asChild className="rounded-full px-6 py-2 bg-black text-white hover:bg-gray-800">
+                <Button asChild className="apple-button rounded-full px-6 py-2 bg-[#0066CC] text-white hover:bg-blue-600">
                   <Link to="/products">Выбрать</Link>
                 </Button>
               </div>
@@ -166,7 +160,7 @@ const Index = () => {
               </div>
               <h3 className="text-2xl apple-style text-gray-900 text-center">5 000 ₽</h3>
               <div className="mt-6 text-center">
-                <Button asChild className="rounded-full px-6 py-2 bg-black text-white hover:bg-gray-800">
+                <Button asChild className="apple-button rounded-full px-6 py-2 bg-[#0066CC] text-white hover:bg-blue-600">
                   <Link to="/products">Выбрать</Link>
                 </Button>
               </div>

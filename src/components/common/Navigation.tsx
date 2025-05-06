@@ -1,4 +1,3 @@
-
 import React from "react";
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
@@ -12,17 +11,17 @@ const Navigation = () => {
           <div className="flex-shrink-0">
             <Link to="/" className="flex items-center">
               <Icon name="Apple" className="text-black h-8 w-8" />
-              <span className="ml-2 text-xl font-medium text-gray-900">Gift Card</span>
+              <span className="ml-2 text-xl apple-style text-gray-900">Gift Card</span>
             </Link>
           </div>
           <div className="hidden md:flex items-center space-x-8">
-            <Link to="/" className="text-gray-900 hover:text-gray-600 px-3 py-2 text-sm font-medium">
+            <Link to="/" className="text-gray-900 hover:text-gray-600 px-3 py-2 text-sm font-medium apple-style">
               Главная
             </Link>
-            <Link to="/products" className="text-gray-900 hover:text-gray-600 px-3 py-2 text-sm font-medium">
+            <Link to="/products" className="text-gray-900 hover:text-gray-600 px-3 py-2 text-sm font-medium apple-style">
               Карты
             </Link>
-            <Link to="/instruction" className="text-gray-900 hover:text-gray-600 px-3 py-2 text-sm font-medium">
+            <Link to="/instruction" className="text-gray-900 hover:text-gray-600 px-3 py-2 text-sm font-medium apple-style">
               Инструкция
             </Link>
           </div>
