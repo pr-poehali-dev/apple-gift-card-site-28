@@ -1,3 +1,4 @@
+
 import React from "react";
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
@@ -36,105 +37,136 @@ const Index = () => {
         </div>
       </nav>
 
-      {/* Главная секция */}
-      <section className="py-16 sm:py-24">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center">
-            <h1 className="text-4xl apple-heading tracking-tight text-gray-900 sm:text-5xl md:text-6xl">
-              Apple Gift Card
-            </h1>
-            <p className="mt-4 max-w-2xl mx-auto text-xl apple-light text-gray-500">
-              Один подарок. Бесконечные возможности.
-            </p>
-            <div className="mt-8">
-              <Button asChild className="rounded-full px-8 py-6 bg-black text-white hover:bg-gray-800 font-medium">
-                <Link to="/products">Выбрать карту</Link>
-              </Button>
-            </div>
+      {/* Главная секция в стиле Apple */}
+      <section className="py-12 bg-[#f5f5f7]">
+        <div className="max-w-4xl mx-auto px-4 text-center">
+          <h1 className="text-5xl apple-heading tracking-tight text-gray-900 mb-2">
+            Gift Card
+          </h1>
+          <h2 className="text-3xl apple-heading text-gray-900 mb-6">
+            One card. Everything they love.
+          </h2>
+          <p className="mt-4 mx-auto text-base apple-light text-gray-600 max-w-2xl leading-relaxed">
+            Apple Gift Card is the perfect gift for friends and family. Spend it at any Apple Store, on apple.com or in the App Store. Use it for products and accessories, apps, games, music, movies, TV shows, iCloud+ and more.
+          </p>
+          
+          <div className="flex justify-center space-x-4 mt-8">
+            <Button asChild className="rounded-full px-8 py-2 bg-[#0071e3] text-white hover:bg-blue-600">
+              <Link to="/products">Купить карту</Link>
+            </Button>
+            <Button asChild variant="outline" className="rounded-full px-8 py-2 border-gray-300">
+              <Link to="/instruction">Инструкция</Link>
+            </Button>
           </div>
-          <div className="mt-16">
-            <div className="flex items-center justify-center h-80 bg-gray-900 rounded-xl shadow-xl overflow-hidden">
+        </div>
+        
+        <div className="max-w-5xl mx-auto mt-12 flex justify-center">
+          <div className="bg-white rounded-2xl shadow-lg p-6 w-full max-w-lg">
+            <div className="flex justify-center mb-2">
               <img 
-                src="https://cdn.poehali.dev/files/11e1e25d-486d-440f-812c-27103476ff7c.png" 
-                alt="Apple Think Different" 
-                className="w-full object-cover"
+                src="https://cdn.poehali.dev/files/328c70d7-dade-4f72-9826-e2eeece3af0b.png" 
+                alt="Apple Gift Card с разноцветным логотипом" 
+                className="w-24 h-auto"
               />
             </div>
+            <div className="text-center">
+              <p className="text-sm text-gray-500 apple-light">
+                Подарочная карта для App Store и iTunes
+              </p>
+              <p className="text-3xl font-medium mt-2 apple-style">
+                1 000 ₽
+              </p>
+            </div>
           </div>
         </div>
       </section>
 
-      {/* Секция возможностей */}
-      <section className="py-16 bg-gray-50">
+      {/* Секция преимуществ */}
+      <section className="py-16 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
-            <h2 className="text-3xl apple-heading text-gray-900">Возможности без границ</h2>
-            <p className="mt-4 max-w-2xl mx-auto text-xl apple-light text-gray-500">
-              Используйте подарочную карту для покупок в App Store, iTunes Store и не только.
+            <h2 className="text-3xl apple-heading text-gray-900">Универсальный подарок</h2>
+            <p className="mt-4 max-w-2xl mx-auto text-base apple-light text-gray-500 leading-relaxed">
+              Одна карта для всех сервисов Apple. Идеально подходит для любого повода.
             </p>
           </div>
-          <div className="mt-12 grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3">
-            <div className="bg-white p-6 rounded-lg shadow-sm">
-              <div className="flex items-center justify-center h-12 w-12 rounded-md bg-black text-white mx-auto">
-                <Icon name="Music2" className="h-6 w-6" />
+          <div className="mt-16 grid grid-cols-1 gap-x-6 gap-y-12 sm:grid-cols-2 lg:grid-cols-3">
+            <div className="text-center">
+              <div className="flex items-center justify-center h-12 w-12 rounded-full bg-blue-100 text-blue-600 mx-auto">
+                <Icon name="Gift" className="h-6 w-6" />
               </div>
-              <h3 className="mt-5 text-lg apple-style text-gray-900 text-center">Apple Music</h3>
-              <p className="mt-2 text-base apple-light text-gray-500 text-center">
-                Более 90 миллионов песен без рекламы
+              <h3 className="mt-6 text-lg apple-style text-gray-900">Идеальный подарок</h3>
+              <p className="mt-2 text-base apple-light text-gray-500">
+                Порадуйте близких универсальным подарком для экосистемы Apple
               </p>
             </div>
-            <div className="bg-white p-6 rounded-lg shadow-sm">
-              <div className="flex items-center justify-center h-12 w-12 rounded-md bg-black text-white mx-auto">
-                <Icon name="Gamepad2" className="h-6 w-6" />
+            <div className="text-center">
+              <div className="flex items-center justify-center h-12 w-12 rounded-full bg-green-100 text-green-600 mx-auto">
+                <Icon name="Zap" className="h-6 w-6" />
               </div>
-              <h3 className="mt-5 text-lg apple-style text-gray-900 text-center">Apple Arcade</h3>
-              <p className="mt-2 text-base apple-light text-gray-500 text-center">
-                Доступ к сотням игр без рекламы
+              <h3 className="mt-6 text-lg apple-style text-gray-900">Мгновенная доставка</h3>
+              <p className="mt-2 text-base apple-light text-gray-500">
+                Получите код активации на email сразу после оплаты
               </p>
             </div>
-            <div className="bg-white p-6 rounded-lg shadow-sm">
-              <div className="flex items-center justify-center h-12 w-12 rounded-md bg-black text-white mx-auto">
-                <Icon name="Store" className="h-6 w-6" />
+            <div className="text-center">
+              <div className="flex items-center justify-center h-12 w-12 rounded-full bg-purple-100 text-purple-600 mx-auto">
+                <Icon name="ShieldCheck" className="h-6 w-6" />
               </div>
-              <h3 className="mt-5 text-lg apple-style text-gray-900 text-center">App Store</h3>
-              <p className="mt-2 text-base apple-light text-gray-500 text-center">
-                Миллионы приложений для iPhone и iPad
+              <h3 className="mt-6 text-lg apple-style text-gray-900">Безопасно и надежно</h3>
+              <p className="mt-2 text-base apple-light text-gray-500">
+                Официальные коды активации с гарантией работы
               </p>
             </div>
           </div>
         </div>
       </section>
 
-      {/* Секция номиналов */}
-      <section className="py-16">
+      {/* Секция вариантов карт */}
+      <section className="py-16 bg-[#f5f5f7]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
-            <h2 className="text-3xl apple-heading text-gray-900">Доступные номиналы</h2>
-            <p className="mt-4 max-w-2xl mx-auto text-xl apple-light text-gray-500">
-              Выберите подходящий номинал для вашего подарка
+            <h2 className="text-3xl apple-heading text-gray-900">Выберите номинал</h2>
+            <p className="mt-4 max-w-2xl mx-auto text-base apple-light text-gray-500">
+              Доступно несколько вариантов номинала для любого бюджета
             </p>
           </div>
           <div className="mt-12 grid grid-cols-1 gap-8 sm:grid-cols-3">
-            <div className="bg-white p-6 rounded-lg border border-gray-200 hover:border-gray-300 transition-colors">
+            <div className="bg-white p-8 rounded-2xl shadow-sm hover:shadow-md transition-shadow">
+              <div className="flex justify-center mb-4">
+                <div className="w-16 h-16 flex items-center justify-center">
+                  <Icon name="Apple" className="text-black h-10 w-10" />
+                </div>
+              </div>
               <h3 className="text-2xl apple-style text-gray-900 text-center">1 000 ₽</h3>
-              <div className="mt-4 text-center">
-                <Button asChild variant="outline" className="rounded-full px-6">
+              <div className="mt-6 text-center">
+                <Button asChild className="rounded-full px-6 py-2 bg-black text-white hover:bg-gray-800">
                   <Link to="/products">Выбрать</Link>
                 </Button>
               </div>
             </div>
-            <div className="bg-white p-6 rounded-lg border border-gray-200 hover:border-gray-300 transition-colors">
+            <div className="bg-white p-8 rounded-2xl shadow-sm hover:shadow-md transition-shadow">
+              <div className="flex justify-center mb-4">
+                <div className="w-16 h-16 flex items-center justify-center">
+                  <Icon name="Apple" className="text-black h-10 w-10" />
+                </div>
+              </div>
               <h3 className="text-2xl apple-style text-gray-900 text-center">2 500 ₽</h3>
-              <div className="mt-4 text-center">
-                <Button asChild variant="outline" className="rounded-full px-6">
+              <div className="mt-6 text-center">
+                <Button asChild className="rounded-full px-6 py-2 bg-black text-white hover:bg-gray-800">
                   <Link to="/products">Выбрать</Link>
                 </Button>
               </div>
             </div>
-            <div className="bg-white p-6 rounded-lg border border-gray-200 hover:border-gray-300 transition-colors">
+            <div className="bg-white p-8 rounded-2xl shadow-sm hover:shadow-md transition-shadow">
+              <div className="flex justify-center mb-4">
+                <div className="w-16 h-16 flex items-center justify-center">
+                  <Icon name="Apple" className="text-black h-10 w-10" />
+                </div>
+              </div>
               <h3 className="text-2xl apple-style text-gray-900 text-center">5 000 ₽</h3>
-              <div className="mt-4 text-center">
-                <Button asChild variant="outline" className="rounded-full px-6">
+              <div className="mt-6 text-center">
+                <Button asChild className="rounded-full px-6 py-2 bg-black text-white hover:bg-gray-800">
                   <Link to="/products">Выбрать</Link>
                 </Button>
               </div>
@@ -144,44 +176,44 @@ const Index = () => {
       </section>
 
       {/* Подвал */}
-      <footer className="bg-gray-50 border-t border-gray-100">
+      <footer className="bg-white border-t border-gray-100">
         <div className="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-4">
             <div>
-              <h3 className="text-sm font-semibold text-gray-500 tracking-wider uppercase">О нас</h3>
+              <h3 className="text-xs font-semibold text-gray-500 tracking-wider uppercase">О нас</h3>
               <ul className="mt-4 space-y-4">
-                <li><a href="#" className="text-base text-gray-600 hover:text-gray-900">О компании</a></li>
-                <li><a href="#" className="text-base text-gray-600 hover:text-gray-900">Контакты</a></li>
-                <li><a href="#" className="text-base text-gray-600 hover:text-gray-900">Блог</a></li>
+                <li><a href="#" className="text-sm text-gray-600 hover:text-gray-900">О компании</a></li>
+                <li><a href="#" className="text-sm text-gray-600 hover:text-gray-900">Контакты</a></li>
+                <li><a href="#" className="text-sm text-gray-600 hover:text-gray-900">Блог</a></li>
               </ul>
             </div>
             <div>
-              <h3 className="text-sm font-semibold text-gray-500 tracking-wider uppercase">Поддержка</h3>
+              <h3 className="text-xs font-semibold text-gray-500 tracking-wider uppercase">Поддержка</h3>
               <ul className="mt-4 space-y-4">
-                <li><a href="#" className="text-base text-gray-600 hover:text-gray-900">Помощь</a></li>
-                <li><a href="#" className="text-base text-gray-600 hover:text-gray-900">Доставка</a></li>
-                <li><a href="#" className="text-base text-gray-600 hover:text-gray-900">Возврат</a></li>
+                <li><a href="#" className="text-sm text-gray-600 hover:text-gray-900">Помощь</a></li>
+                <li><a href="#" className="text-sm text-gray-600 hover:text-gray-900">Доставка</a></li>
+                <li><a href="#" className="text-sm text-gray-600 hover:text-gray-900">Возврат</a></li>
               </ul>
             </div>
             <div>
-              <h3 className="text-sm font-semibold text-gray-500 tracking-wider uppercase">Документы</h3>
+              <h3 className="text-xs font-semibold text-gray-500 tracking-wider uppercase">Документы</h3>
               <ul className="mt-4 space-y-4">
-                <li><a href="#" className="text-base text-gray-600 hover:text-gray-900">Условия использования</a></li>
-                <li><a href="#" className="text-base text-gray-600 hover:text-gray-900">Политика конфиденциальности</a></li>
-                <li><a href="#" className="text-base text-gray-600 hover:text-gray-900">Оферта</a></li>
+                <li><a href="#" className="text-sm text-gray-600 hover:text-gray-900">Условия использования</a></li>
+                <li><a href="#" className="text-sm text-gray-600 hover:text-gray-900">Политика конфиденциальности</a></li>
+                <li><a href="#" className="text-sm text-gray-600 hover:text-gray-900">Оферта</a></li>
               </ul>
             </div>
             <div>
-              <h3 className="text-sm font-semibold text-gray-500 tracking-wider uppercase">Apple</h3>
+              <h3 className="text-xs font-semibold text-gray-500 tracking-wider uppercase">Apple</h3>
               <ul className="mt-4 space-y-4">
-                <li><a href="#" className="text-base text-gray-600 hover:text-gray-900">Активация карты</a></li>
-                <li><a href="#" className="text-base text-gray-600 hover:text-gray-900">Проверка баланса</a></li>
-                <li><a href="#" className="text-base text-gray-600 hover:text-gray-900">Поддержка Apple</a></li>
+                <li><a href="#" className="text-sm text-gray-600 hover:text-gray-900">Активация карты</a></li>
+                <li><a href="#" className="text-sm text-gray-600 hover:text-gray-900">Проверка баланса</a></li>
+                <li><a href="#" className="text-sm text-gray-600 hover:text-gray-900">Поддержка Apple</a></li>
               </ul>
             </div>
           </div>
           <div className="mt-12 border-t border-gray-200 pt-8">
-            <p className="text-base apple-light text-gray-500 text-center">
+            <p className="text-sm apple-light text-gray-500 text-center">
               &copy; {new Date().getFullYear()} Apple Gift Card Store. Все права защищены.
             </p>
           </div>
