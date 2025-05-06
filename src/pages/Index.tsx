@@ -1,4 +1,3 @@
-
 import React from "react";
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
@@ -54,11 +53,12 @@ const Index = () => {
             </div>
           </div>
           <div className="mt-16">
-            <img 
-              src="https://images.unsplash.com/photo-1607936580929-ba1abb906839?q=80&w=1200&auto=format&fit=crop"
-              alt="Apple Gift Card" 
-              className="rounded-xl shadow-xl mx-auto max-w-full h-auto"
-            />
+            <div className="flex items-center justify-center h-80 bg-gray-50 rounded-xl shadow-xl overflow-hidden">
+              <Icon 
+                name="Apple" 
+                className="text-black h-40 w-40" 
+              />
+            </div>
           </div>
         </div>
       </section>
