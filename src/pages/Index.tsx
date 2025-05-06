@@ -13,7 +13,7 @@ const Index = () => {
             <div className="flex-shrink-0">
               <Link to="/" className="flex items-center">
                 <Icon name="Apple" className="text-black h-8 w-8" />
-                <span className="ml-2 text-xl font-medium text-gray-900">Gift Card</span>
+                <span className="ml-2 text-xl apple-style text-gray-900">Gift Card</span>
               </Link>
             </div>
             <div className="hidden md:flex items-center space-x-8">
@@ -40,14 +40,14 @@ const Index = () => {
       <section className="py-16 sm:py-24">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
-            <h1 className="text-4xl font-semibold tracking-tight text-gray-900 sm:text-5xl md:text-6xl">
+            <h1 className="text-4xl apple-heading tracking-tight text-gray-900 sm:text-5xl md:text-6xl">
               Apple Gift Card
             </h1>
-            <p className="mt-4 max-w-2xl mx-auto text-xl text-gray-500">
+            <p className="mt-4 max-w-2xl mx-auto text-xl apple-light text-gray-500">
               Один подарок. Бесконечные возможности.
             </p>
             <div className="mt-8">
-              <Button asChild className="rounded-full px-8 py-6 bg-black text-white hover:bg-gray-800">
+              <Button asChild className="rounded-full px-8 py-6 bg-black text-white hover:bg-gray-800 font-medium">
                 <Link to="/products">Выбрать карту</Link>
               </Button>
             </div>
@@ -68,8 +68,8 @@ const Index = () => {
       <section className="py-16 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
-            <h2 className="text-3xl font-semibold text-gray-900">Возможности без границ</h2>
-            <p className="mt-4 max-w-2xl mx-auto text-xl text-gray-500">
+            <h2 className="text-3xl apple-heading text-gray-900">Возможности без границ</h2>
+            <p className="mt-4 max-w-2xl mx-auto text-xl apple-light text-gray-500">
               Используйте подарочную карту для покупок в App Store, iTunes Store и не только.
             </p>
           </div>
@@ -78,8 +78,8 @@ const Index = () => {
               <div className="flex items-center justify-center h-12 w-12 rounded-md bg-black text-white mx-auto">
                 <Icon name="Music2" className="h-6 w-6" />
               </div>
-              <h3 className="mt-5 text-lg font-medium text-gray-900 text-center">Apple Music</h3>
-              <p className="mt-2 text-base text-gray-500 text-center">
+              <h3 className="mt-5 text-lg apple-style text-gray-900 text-center">Apple Music</h3>
+              <p className="mt-2 text-base apple-light text-gray-500 text-center">
                 Более 90 миллионов песен без рекламы
               </p>
             </div>
@@ -87,8 +87,8 @@ const Index = () => {
               <div className="flex items-center justify-center h-12 w-12 rounded-md bg-black text-white mx-auto">
                 <Icon name="Gamepad2" className="h-6 w-6" />
               </div>
-              <h3 className="mt-5 text-lg font-medium text-gray-900 text-center">Apple Arcade</h3>
-              <p className="mt-2 text-base text-gray-500 text-center">
+              <h3 className="mt-5 text-lg apple-style text-gray-900 text-center">Apple Arcade</h3>
+              <p className="mt-2 text-base apple-light text-gray-500 text-center">
                 Доступ к сотням игр без рекламы
               </p>
             </div>
@@ -96,8 +96,8 @@ const Index = () => {
               <div className="flex items-center justify-center h-12 w-12 rounded-md bg-black text-white mx-auto">
                 <Icon name="Store" className="h-6 w-6" />
               </div>
-              <h3 className="mt-5 text-lg font-medium text-gray-900 text-center">App Store</h3>
-              <p className="mt-2 text-base text-gray-500 text-center">
+              <h3 className="mt-5 text-lg apple-style text-gray-900 text-center">App Store</h3>
+              <p className="mt-2 text-base apple-light text-gray-500 text-center">
                 Миллионы приложений для iPhone и iPad
               </p>
             </div>
@@ -109,14 +109,14 @@ const Index = () => {
       <section className="py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
-            <h2 className="text-3xl font-semibold text-gray-900">Доступные номиналы</h2>
-            <p className="mt-4 max-w-2xl mx-auto text-xl text-gray-500">
+            <h2 className="text-3xl apple-heading text-gray-900">Доступные номиналы</h2>
+            <p className="mt-4 max-w-2xl mx-auto text-xl apple-light text-gray-500">
               Выберите подходящий номинал для вашего подарка
             </p>
           </div>
           <div className="mt-12 grid grid-cols-1 gap-8 sm:grid-cols-3">
             <div className="bg-white p-6 rounded-lg border border-gray-200 hover:border-gray-300 transition-colors">
-              <h3 className="text-2xl font-medium text-gray-900 text-center">1 000 ₽</h3>
+              <h3 className="text-2xl apple-style text-gray-900 text-center">1 000 ₽</h3>
               <div className="mt-4 text-center">
                 <Button asChild variant="outline" className="rounded-full px-6">
                   <Link to="/products">Выбрать</Link>
@@ -124,7 +124,7 @@ const Index = () => {
               </div>
             </div>
             <div className="bg-white p-6 rounded-lg border border-gray-200 hover:border-gray-300 transition-colors">
-              <h3 className="text-2xl font-medium text-gray-900 text-center">2 500 ₽</h3>
+              <h3 className="text-2xl apple-style text-gray-900 text-center">2 500 ₽</h3>
               <div className="mt-4 text-center">
                 <Button asChild variant="outline" className="rounded-full px-6">
                   <Link to="/products">Выбрать</Link>
@@ -132,7 +132,7 @@ const Index = () => {
               </div>
             </div>
             <div className="bg-white p-6 rounded-lg border border-gray-200 hover:border-gray-300 transition-colors">
-              <h3 className="text-2xl font-medium text-gray-900 text-center">5 000 ₽</h3>
+              <h3 className="text-2xl apple-style text-gray-900 text-center">5 000 ₽</h3>
               <div className="mt-4 text-center">
                 <Button asChild variant="outline" className="rounded-full px-6">
                   <Link to="/products">Выбрать</Link>
@@ -181,7 +181,7 @@ const Index = () => {
             </div>
           </div>
           <div className="mt-12 border-t border-gray-200 pt-8">
-            <p className="text-base text-gray-500 text-center">
+            <p className="text-base apple-light text-gray-500 text-center">
               &copy; {new Date().getFullYear()} Apple Gift Card Store. Все права защищены.
             </p>
           </div>
