@@ -1,4 +1,3 @@
-
 import React from "react";
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
@@ -83,11 +82,12 @@ const Products = () => {
             {giftCards.map((card) => (
               <Card key={card.id} className="overflow-hidden border-gray-200 hover:border-gray-300 transition-all hover:shadow-md">
                 <CardHeader className="p-0">
-                  <img 
-                    src={card.image} 
-                    alt={card.title} 
-                    className="h-56 w-full object-cover"
-                  />
+                  <div className="flex items-center justify-center h-56 bg-gray-50">
+                    <Icon 
+                      name="Apple" 
+                      className="text-black h-24 w-24" 
+                    />
+                  </div>
                 </CardHeader>
                 <CardContent className="p-6">
                   <CardTitle className="text-xl font-medium">{card.title}</CardTitle>
